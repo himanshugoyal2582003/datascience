@@ -69,11 +69,8 @@ For this sample, the 95th percentile amount threshold is approximately
 ```text
 aml/
 |-- README.md
-|-- raw-data/
-|   `-- trans_3000p2_list.txt
-|-- cleaned-data/
-|   |-- aml_features.csv
-|   `-- powerbi_aml_dataset.csv
+|-- raw-data/                         # Download locally; ignored by Git
+|-- cleaned-data/                     # Generated CSV outputs; ignored by Git
 |-- python-analysis/
 |   |-- 01_load_and_explore.py
 |   |-- 02_feature_engineering.py
@@ -84,7 +81,6 @@ aml/
 |   `-- 07_export_dashboard_data.py
 |-- reports/
 |   |-- AML_PROJECT_REPORT.md
-|   |-- top_risk_accounts.csv
 |   |-- dashboard.png
 |   |-- workflow.png
 |   |-- image.png
@@ -95,10 +91,8 @@ aml/
 |   `-- Figure_4.png
 |-- powerbi-dashboard/
 |   `-- anti money laundering.pbix
-|-- knime-workflow/
-|   `-- AML_Fraud_Detection_Workflow/
-`-- AML-Data-Public/
-    `-- Dataset_A-45M_Transactions (Feb 2021)/
+`-- knime-workflow/
+    `-- AML_Fraud_Detection_Workflow/
 ```
 
 ## Technologies
@@ -106,24 +100,24 @@ aml/
 - Python: `pandas`, `numpy`, `matplotlib`, `networkx`, `scikit-learn`
 - Power BI Desktop for interactive reporting
 - KNIME Analytics Platform for visual workflow analysis
-- IBM synthetic AML transaction dataset included in `AML-Data-Public/`
+- IBM synthetic AML transaction dataset downloaded separately
 
 ## Dataset Reference
 
 The source data is the IBM synthetic Anti-Money Laundering dataset prepared by
-Erik Altman. The included dataset documentation describes synthetic
-transactions among virtual-world entities and a laundering label for model
-development and evaluation.
+Erik Altman. Its documentation describes synthetic transactions among
+virtual-world entities and a laundering label for model development and
+evaluation.
 
-- Dataset documentation: `AML-Data-Public/README.boxnote`
-- IBM data documentation link:
-  <https://ibm.ent.box.com/v/AML-Anti-Money-Laundering-Data/file/780515045707>
-- Updated dataset publication:
+- Download dataset:
   <https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml>
+- IBM documentation:
+  <https://ibm.ent.box.com/v/AML-Anti-Money-Laundering-Data/file/780515045707>
 
-The 4.53 GB extracted raw transaction file and its large archive are excluded
-from GitHub because they exceed normal repository file-size limits. The
-processed 100,000-row analysis outputs in `cleaned-data/` remain included.
+The source file, extracted/archive copies, and generated CSV outputs are
+excluded from GitHub. After download, place `trans_3000p2_list.txt` in
+`raw-data/`; the scripts will generate data in `cleaned-data/` and the
+account summary in `reports/`.
 
 ## Run The Python Analysis
 
@@ -152,6 +146,8 @@ images are stored in `reports/`. The export script creates:
 
 - `cleaned-data/powerbi_aml_dataset.csv`
 - `reports/top_risk_accounts.csv`
+
+These CSV outputs are generated locally and are intentionally ignored by Git.
 
 ## Dashboard And Workflow Files
 

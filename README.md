@@ -31,7 +31,11 @@ production alerting system.
 
 ### Data Note
 
-The full IBM synthetic transaction source file is too large for standard
-GitHub storage and is intentionally excluded from this repository. The
-feature-engineered sample and Power BI-ready exported data are included for
-review and dashboard use.
+The IBM synthetic transaction source file and generated CSV outputs are not
+stored in this repository. Download the dataset from:
+
+- [IBM Transactions for Anti Money Laundering (AML) on Kaggle](https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml)
+
+Place the downloaded transaction file in `aml/raw-data/` and run the Python
+scripts described in the [AML project README](aml/README.md) to regenerate
+the feature and dashboard data files.

@@ -33,10 +33,11 @@ The sampled transactions occur from `2019-01-01 00:00:00` through
 `2019-01-01 19:13:00`.
 
 The dataset is attributed to IBM synthetic AML data prepared by Erik Altman.
-Its supplied documentation describes transactions and laundering labels
+Its documentation describes transactions and laundering labels
 created from a virtual-world simulation rather than real customer data. The
-complete extracted transaction file is not included in the GitHub repository
-because its 4.53 GB size exceeds standard hosting limits.
+source data and generated CSV outputs are not included in the GitHub
+repository. The source may be downloaded from:
+<https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml>.
 
 | Sample Metric | Value |
 | --- | ---: |
@@ -217,9 +218,9 @@ The decision tree view confirms the full input payment-format class totals:
 
 | Deliverable | Location | Purpose |
 | --- | --- | --- |
-| Feature-engineered data | `cleaned-data/aml_features.csv` | Python analysis output |
-| Dashboard-ready data | `cleaned-data/powerbi_aml_dataset.csv` | Power BI import dataset |
-| Risk account summary | `reports/top_risk_accounts.csv` | Account-level risk reporting |
+| Feature-engineered data | `cleaned-data/aml_features.csv` | Generated locally by Python analysis |
+| Dashboard-ready data | `cleaned-data/powerbi_aml_dataset.csv` | Generated locally for Power BI import |
+| Risk account summary | `reports/top_risk_accounts.csv` | Generated locally for account reporting |
 | Power BI report | `powerbi-dashboard/anti money laundering.pbix` | Interactive dashboard |
 | KNIME workflow | `knime-workflow/AML_Fraud_Detection_Workflow/` | Visual analysis workflow |
 | Python scripts | `python-analysis/` | Reproducible processing steps |
@@ -262,8 +263,7 @@ before using risk scores for investigative prioritization.
 
 ## References
 
-1. Erik Altman / IBM, *Anti-Money Laundering Data*, supplied dataset
-   documentation in `AML-Data-Public/README.boxnote` and IBM Box publication:
+1. Erik Altman / IBM, *Anti-Money Laundering Data*, IBM Box publication:
    <https://ibm.ent.box.com/v/AML-Anti-Money-Laundering-Data/file/780515045707>.
 2. Erik Altman, *IBM Transactions for Anti Money Laundering (AML)*, updated
    dataset publication:

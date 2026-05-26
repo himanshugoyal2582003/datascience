@@ -4,7 +4,8 @@ __pycache__/
 *.py[cod]
 **/.knimeLock
 
-# Large IBM AML source data files (over GitHub's file size limits)
+# Downloaded source datasets and generated tabular outputs
 aml/raw-data/
-aml/AML-Data-Public/Dataset_A-45M_Transactions (Feb 2021)/trans_3000p2_list.txt.bz2
-aml/AML-Data-Public/Dataset_A-45M_Transactions (Feb 2021)/trans_3000p2_list.txt/
+aml/AML-Data-Public/
+aml/cleaned-data/
+aml/reports/top_risk_accounts.csv
