@@ -1,0 +1,10 @@
+# Local environments
+.venv/
+__pycache__/
+*.py[cod]
+**/.knimeLock
+
+# Large IBM AML source data files (over GitHub's file size limits)
+aml/raw-data/
+aml/AML-Data-Public/Dataset_A-45M_Transactions (Feb 2021)/trans_3000p2_list.txt.bz2
+aml/AML-Data-Public/Dataset_A-45M_Transactions (Feb 2021)/trans_3000p2_list.txt/
