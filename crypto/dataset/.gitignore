@@ -1,0 +1,18 @@
+# Raw Data Files (Large unprocessed datasets)
+elliptic-data-set.zip
+elliptic_bitcoin_dataset/
+elliptic/elliptic_bitcoin_dataset/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Keep processed data files
+!anomalies.csv
+!centrality_results.csv
+!community_analysis.csv
+!risk_scores.csv
+!

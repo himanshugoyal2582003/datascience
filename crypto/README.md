@@ -7,23 +7,25 @@
 [![Frontend](https://img.shields.io/badge/Frontend-Next.js%20on%20Netlify-black)](https://netlify.com)
 [![BI](https://img.shields.io/badge/BI-Power%20BI-F2C811?logo=powerbi&logoColor=black)](powerbi/)
 [![ETL](https://img.shields.io/badge/ETL-KNIME-yellow)](knime/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green?logo=node.js)](https://nodejs.org/)
 
 ---
 
 ## 📋 Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Architecture](#-architecture)
-- [Folder Structure](#-folder-structure)
-- [Dataset](#-dataset)
-- [Backend API](#-backend-api)
-- [Frontend Dashboard](#-frontend-dashboard)
-- [Power BI Dashboard](#-power-bi-dashboard)
-- [KNIME Workflow](#-knime-workflow)
-- [Jupyter Notebook](#-jupyter-notebook)
-- [Screenshots](#-screenshots)
-- [Key Findings](#-key-findings)
-- [Quick Start](#-quick-start)
+- [🧠 Project Overview](#-project-overview)
+- [⚡ Key Features](#-key-features)
+- [🏗️ Architecture](#️-architecture)
+- [📁 Folder Structure](#-folder-structure)
+- [🚀 Quick Start](#-quick-start)
+- [📚 Documentation](#-documentation)
+- [🔧 Tech Stack](#-tech-stack)
+- [📊 Dataset](#-dataset)
+- [🤝 Contributing](#-contributing)
+- [📝 License](#-license)
+- [🔗 Links](#-links)
 
 ---
 
@@ -501,5 +503,146 @@ For a detailed, screenshot-by-screenshot walkthrough of every component:
 👉 **[View Full Report → docs/REPORT.md](docs/REPORT.md)**
 
 ---
+
+## ⚡ Key Features
+
+### 🔍 Data Analysis
+- ✅ Transaction feature engineering (166+ features)
+- ✅ Risk scoring algorithms
+- ✅ Anomaly detection (Isolation Forest, Statistical)
+- ✅ Graph analytics (centrality, communities)
+- ✅ Network visualization
+
+### 📊 Dashboard
+- ✅ Real-time fraud detection terminal
+- ✅ Transaction network visualization
+- ✅ Risk distribution charts
+- ✅ Anomaly alerts
+- ✅ Account search and filtering
+- ✅ Community detection visualization
+
+### 📈 Business Intelligence
+- ✅ Executive KPI dashboard (Power BI)
+- ✅ Risk heatmaps
+- ✅ Fraud trends over time
+- ✅ Comparative analysis
+
+### 🤖 ML/AI
+- ✅ Decision Tree classification (KNIME)
+- ✅ Rule-based fraud detection
+- ✅ Ensemble risk scoring
+- ✅ Continuous model monitoring
+
+### 🌐 API
+- ✅ RESTful JSON endpoints
+- ✅ Automatic API documentation (Swagger)
+- ✅ Pagination & filtering
+- ✅ Error handling & validation
+
+---
+
+## 🔧 Tech Stack
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Data Processing** | Python 3.10+, pandas, numpy, scikit-learn | Feature engineering, ML models |
+| **ETL** | KNIME Analytics Platform | Visual workflow orchestration |
+| **Backend API** | FastAPI, Uvicorn, Pydantic | REST API, validation, docs |
+| **Frontend** | Next.js 14+, TypeScript, React | Dashboard UI, components |
+| **Visualization** | Recharts, D3.js | Network graphs, charts |
+| **Business Intelligence** | Power BI | Executive dashboards |
+| **Deployment** | Render (Backend), Netlify (Frontend) | Cloud hosting |
+| **Database** | CSV (current) / PostgreSQL (future) | Data persistence |
+
+---
+
+## 📚 Documentation
+
+| Document | Purpose |
+|----------|---------|
+| [backend/README.md](backend/README.md) | API endpoints, configuration, authentication |
+| [backend/DEPLOYMENT.md](backend/DEPLOYMENT.md) | Deploy to Render, environment setup |
+| [frontend/README.md](frontend/README.md) | Dashboard features, components, customization |
+| [dataset/README.md](dataset/README.md) | Data download, processing, dictionary |
+| [knime/README.md](knime/README.md) | KNIME workflow guide, nodes, customization |
+| [docs/README.md](docs/README.md) | Full architecture overview |
+| [docs/REPORT.md](docs/REPORT.md) | Visual project report with screenshots |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidelines, code style |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Code style guidelines
+- Pull request process
+- Development setup
+- Bug reporting
+- Feature requests
+
+**Quick start for contributors:**
+```bash
+git checkout -b feature/your-feature
+# Make changes
+git commit -m "feat: description"
+git push origin feature/your-feature
+# Create Pull Request
+```
+
+**Key areas for contribution:**
+- 🔍 ML Models — Improve fraud detection algorithms
+- 🎨 UI/UX — Enhance frontend dashboard
+- 📊 Analytics — Add new analysis and metrics
+- 📖 Documentation — Improve clarity and completeness
+- 🧪 Testing — Increase test coverage
+- 🐛 Bug Fixes — Address existing issues
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
+
+**Dataset License**: The Elliptic Bitcoin Dataset is provided under **CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike). Attribution is required. See dataset [terms](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set) for details.
+
+---
+
+## 🔗 Links
+
+### Live Deployments
+- 🌐 **Frontend**: [Netlify Link]
+- 🔌 **Backend API**: [https://cfiback.onrender.com](https://cfiback.onrender.com)
+- 📊 **Power BI**: Available in `powerbi/` directory
+
+### External Resources
+- 📚 [Elliptic Dataset](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set)
+- 🔗 [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- ⚛️ [Next.js Documentation](https://nextjs.org/docs)
+- 🧩 [KNIME Hub](https://www.knime.com/)
+- 📊 [Power BI Documentation](https://docs.microsoft.com/power-bi/)
+
+### Source Code Repositories
+- Project Root: `e:\datascience\crypto\`
+
+---
+
+## 📈 Roadmap
+
+- [ ] Real-time streaming data support
+- [ ] PostgreSQL integration
+- [ ] Advanced ML models (GNNs, Transformers)
+- [ ] Mobile dashboard
+- [ ] REST API rate limiting
+- [ ] Database transaction history
+- [ ] Advanced anomaly detection
+- [ ] Pattern-based rule engine
+- [ ] Multi-blockchain support (Ethereum, Monero)
+- [ ] Regulatory compliance reporting
+
+---
+
+**Made with ❤️ by the CFI Team**
+
+⭐ If you find this project useful, please star it!
 
 *Dataset: [Elliptic Bitcoin Dataset](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set) · Project: `e:\datascience\crypto\`*

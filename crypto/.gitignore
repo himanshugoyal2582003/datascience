@@ -1,15 +1,3 @@
-# Local environments
-.venv/
-__pycache__/
-*.py[cod]
-**/.knimeLock
-
-# Downloaded source datasets and generated tabular outputs
-aml/raw-data/
-aml/AML-Data-Public/
-aml/cleaned-data/
-aml/reports/top_risk_accounts.csv
-
 # Python
 __pycache__/
 *.py[cod]
