@@ -83,3 +83,17 @@ out/
 *.zip
 *.csv
 dataset/
+
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+node_modules/
+.next/
+dist/
+build/
+dataset/
+*.csv
+*.zip
