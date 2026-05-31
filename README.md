@@ -1,45 +1,32 @@
-# Data Science Projects
+# Financial Intelligence Data Science Projects
 
-This workspace contains multiple data-science projects and prototypes focused
-on financial risk and fraud intelligence. Two featured projects are:
+This workspace contains data-science and BI projects for financial risk,
+fraud detection, transaction monitoring, and digital payment intelligence.
 
-- Anti-Money Laundering Intelligence Dashboard (AML)
-- Crypto Fraud Intelligence (CFI)
+## Projects
 
-## Anti-Money Laundering Intelligence Dashboard
+| Project | Focus | Main outputs |
+| --- | --- | --- |
+| [Anti-Money Laundering Intelligence Dashboard](Anti-Money%20Laundering%20Intelligence%20Dashboard/README.md) | AML risk scoring and transaction monitoring | Python analysis, KNIME workflow, Power BI dashboard |
+| [Crypto Fraud Intelligence](Crypto%20Fraud%20Intelligence/README.md) | Blockchain fraud detection on Elliptic-style data | FastAPI backend, Next.js dashboard, KNIME workflow, Power BI report |
+| [Open Banking Personal Finance Intelligence Platform](Open%20Banking%20Personal%20Finance%20Intelligence%20Platform/README.md) | Personal finance behavior, spending, and payment insights | Synthetic open banking data, analytics scripts, KNIME workflow, Power BI report |
+| [UPI Ecosystem Intelligence](UPI%20Ecosystem%20Intelligence/README.md) | UPI transaction, merchant, user, risk, and geographic analytics | Analysis notebooks, KNIME workflow, Power BI dashboard |
 
-An exploratory AML transaction-monitoring prototype using Python, KNIME, and
-Power BI on the IBM synthetic AML transactions dataset. The analysis focuses
-on interpretable rule-based risk scoring, anomaly detection, and preparing
-dashboard-ready data for investigation and reporting.
+## Repository Notes
 
-- Read the full project details: [aml/README.md](aml/README.md)
-- Key outputs: cleaned CSVs for Power BI, analysis notebooks, and a KNIME
-	workflow in `aml/knime-workflow/`.
-- Data: download the IBM AML dataset from Kaggle and place the source file in
-	`aml/raw-data/` (see `aml/README.md` for exact filenames and run steps).
+- Raw/unprocessed datasets, generated CSV outputs, local environments, logs,
+  and build artifacts are excluded from Git.
+- Project documentation lives inside each project folder, with screenshots and
+  visual references under each project's `docs/` directory.
+- Power BI files are kept with the project folders so dashboards can be opened
+  directly after the data outputs are regenerated.
 
-## Crypto Fraud Intelligence (CFI)
+## Getting Started
 
-An end-to-end system for blockchain transaction fraud detection built on the
-Elliptic Bitcoin dataset. The project includes data preprocessing and
-feature engineering notebooks, a KNIME visual ETL, a FastAPI backend serving
-CSV-derived endpoints, and a Next.js interactive dashboard plus a Power BI
-report for executive views.
+Open the README for the project you want to run first. Most projects follow the
+same pattern:
 
-- Read the full project details: [crypto/README.md](crypto/README.md)
-- Key outputs: `dataset/*` CSV exports, `backend` API, `frontend` dashboard,
-	and `powerbi/` report.
-
-## Getting started
-
-- See the individual project READMEs for run instructions:
-	- [aml/README.md](aml/README.md)
-	- [crypto/README.md](crypto/README.md)
-- Large raw datasets and generated CSV outputs are intentionally excluded from
-	version control. Download the required datasets (Kaggle / Elliptic) and
-	place them in the respective `raw-data` or `dataset` folders before running
-	the notebooks or scripts.
-
-If you'd like, I can also tidy and expand the project READMEs with quick-start
-commands, badges, and short examples — tell me which project to prioritize.
+1. Place the required raw dataset in that project's `raw-data/`, `dataset/raw/`,
+   or equivalent local data folder.
+2. Run the notebooks or scripts to generate cleaned and dashboard-ready CSVs.
+3. Open the KNIME workflow or Power BI file for visual analysis and reporting.
